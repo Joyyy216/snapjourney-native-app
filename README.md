@@ -42,49 +42,37 @@ SnapJourney adalah aplikasi mobile berbasis **React Native** menggunakan **Expo 
 
 ## Home Screen
 
-![Home](screenshots/home-screen.jpeg)
+![Home](home-screen.jpeg)
 
 ---
 
 ## Camera / Gallery Option
 
-![Camera Option](screenshots/photo-option.png)
+![Camera Option](photo-option.jpeg)
 
 ---
 
 ## Camera Permission
 
-![Permission](screenshots/camera-permission.png)
-
----
-
-## Photo Successfully Changed
-
-![Photo](screenshots/photo-success.png)
+![Permission](camera-permission.jpeg)
 
 ---
 
 ## Current Location
 
-![Location](screenshots/location-success.png)
+![Location](location-success.jpeg)
 
 ---
 
 ## Google Maps
 
-![Maps](screenshots/google-maps.png)
-
----
-
-## Permission Denied
-
-![Denied](screenshots/permission-denied.png)
+![Maps](google-maps.jpeg)
 
 ---
 
 ## Saved Data
 
-![Saved](screenshots/saved-data.png)
+![Saved](saved-data.jpeg)
 
 ---
 
