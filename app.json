@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "SnapJourney",
+    "slug": "snapjourney",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#EEF6FF"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "sdkVersion": "54.0.0",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.kelompok.snapjourney",
+      "infoPlist": {
+        "NSCameraUsageDescription": "SnapJourney memerlukan akses kamera untuk mengambil foto profil Anda.",
+        "NSPhotoLibraryUsageDescription": "SnapJourney memerlukan akses galeri untuk memilih foto profil Anda.",
+        "NSLocationWhenInUseUsageDescription": "SnapJourney memerlukan akses lokasi untuk menampilkan tempat dan cuaca Anda saat ini."
+      }
+    },
+    "android": {
+      "package": "com.kelompok.snapjourney",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#EEF6FF"
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "SnapJourney memerlukan akses galeri untuk memilih foto profil Anda.",
+          "cameraPermission": "SnapJourney memerlukan akses kamera untuk mengambil foto profil Anda."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "SnapJourney memerlukan akses lokasi untuk menampilkan tempat dan cuaca Anda saat ini."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "isi-dengan-project-id-anda"
+      }
+    }
+  }
+}
