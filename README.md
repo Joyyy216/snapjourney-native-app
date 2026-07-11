@@ -172,7 +172,7 @@ SnapJourney
 
 # 📌 Expo Snack
 
-https://snack.expo.dev/@YOUR_USERNAME/snapjourney
+(https://snack.expo.dev/@joyyy21/snapjourney---mission-13-native-power-app)
 
 ---
 
