@@ -178,6 +178,8 @@ SnapJourney
 
 # 👩‍💻 Developer
 
+**Joyce Putri**
+
 ---
 
 # 🚀 Release Candidate (Mission 14)
@@ -234,8 +236,6 @@ Aplikasi ini telah melalui proses **build release** menggunakan **EAS Build**, m
 | 6 | AsyncStorage menyimpan data dengan benar | ✅ |
 | 7 | Google Maps terbuka dari aplikasi | ✅ |
 | 8 | Aplikasi berjalan mandiri tanpa Expo Go | ✅ |
-
----
 
 ---
 
