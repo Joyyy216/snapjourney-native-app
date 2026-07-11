@@ -178,11 +178,64 @@ SnapJourney
 
 # 👩‍💻 Developer
 
-**Joyce Putri**
+---
 
-Information Systems
+# 🚀 Release Candidate (Mission 14)
 
-Universitas Prima Indonesia
+Aplikasi ini telah melalui proses **build release** menggunakan **EAS Build**, menghasilkan APK yang dapat diinstal langsung di HP Android tanpa memerlukan Expo Go.
+
+## 📦 Versi Release
+
+| Item | Nilai |
+|---|---|
+| Version | `1.0.0` |
+| Version Code (Android) | `1` |
+| SDK Version | `54.0.0` |
+| Build Profile | `preview` |
+| Build Type | APK (internal distribution) |
+
+## ⬇️ Download APK
+
+**[Download SnapJourney v1.0.0 (APK)](https://expo.dev/artifacts/eas/qr_HqsWfWYhZhzKgMS0r_9W0NTemWNob0s_j9VA5smo.apk)**
+
+> ⚠️ **Catatan:** Link artifact APK dari EAS Build memiliki masa berlaku terbatas (±13 hari sejak build dibuat, per kebijakan free tier EAS). Jika link sudah tidak dapat diakses, silakan build ulang menggunakan `eas build --platform android --profile preview` mengikuti konfigurasi `eas.json` pada repository ini.
+
+## 🛠️ Proses Build (Ringkasan)
+
+1. Konfigurasi `app.json` dirapikan untuk standar release: menambahkan `android.versionCode`, migrasi `splash` ke plugin `expo-splash-screen`, dan menghapus permission yang tidak digunakan.
+2. Membuat `eas.json` dengan profile `preview` yang menghasilkan build bertipe APK.
+3. Autentikasi dan inisialisasi project lewat `eas login` dan `eas init`, menghasilkan `projectId` unik yang tersimpan di `app.json`.
+4. Menjalankan `eas build --platform android --profile preview` — build dikompilasi di server EAS Build.
+5. APK diunduh dan diinstal langsung di perangkat Android fisik untuk pengujian akhir.
+
+## 🖼️ Dokumentasi Build & Instalasi
+
+### Build Status: Finished
+
+![Build Finished](build-finished.png)
+
+### Proses Instalasi APK di HP
+
+![APK Install](apk-install.jpeg)
+
+### Aplikasi Berjalan (Native, Tanpa Expo Go)
+
+![App Running](app-running.jpeg)
+
+## ✅ Checklist Pengujian Release
+
+| No | Pengujian | Status |
+|---|---|---|
+| 1 | APK berhasil diinstal di perangkat Android | ✅ |
+| 2 | Splash screen tampil sesuai desain | ✅ |
+| 3 | Fitur kamera & galeri berfungsi | ✅ |
+| 4 | GPS & reverse geocoding berfungsi | ✅ |
+| 5 | Data cuaca (Open-Meteo) tampil | ✅ |
+| 6 | AsyncStorage menyimpan data dengan benar | ✅ |
+| 7 | Google Maps terbuka dari aplikasi | ✅ |
+| 8 | Aplikasi berjalan mandiri tanpa Expo Go | ✅ |
+
+---
 
 ---
 
