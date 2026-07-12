@@ -185,7 +185,6 @@ Coba aplikasi ini langsung di browser tanpa perlu setup apa pun:
 | **NIM** | 243303621234 |
 | **Institusi** | Universitas Prima Indonesia |
 | **Program Studi** | Sistem Informasi |
-| **Kelas** | TI-MOBILE-01 |
 
 ---
 
