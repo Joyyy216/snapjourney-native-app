@@ -1,6 +1,11 @@
 # 📸 SnapJourney
 
-**Capture Your Moment**
+**Capture Your Moment — aplikasi profil digital native yang menggabungkan kamera, GPS, dan cuaca real-time dalam satu pengalaman mulus.**
+
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![Platform](https://img.shields.io/badge/platform-Android-brightgreen)
+![React Native](https://img.shields.io/badge/React%20Native-Expo%20SDK%2054-61DAFB?logo=react)
+![License](https://img.shields.io/badge/license-Academic-lightgrey)
 
 SnapJourney adalah aplikasi mobile berbasis **React Native** menggunakan **Expo SDK 54** yang memanfaatkan fitur native smartphone seperti **kamera, galeri, dan GPS**. Aplikasi ini memungkinkan pengguna mengambil atau memilih foto profil, mendapatkan lokasi saat ini, melihat alamat lengkap, membuka lokasi di Google Maps, serta menyimpan data menggunakan AsyncStorage.
 
@@ -10,31 +15,21 @@ SnapJourney adalah aplikasi mobile berbasis **React Native** menggunakan **Expo 
 
 ### ✅ Level 1 (Core Features)
 
-- 📸 Camera
-- 🖼️ Gallery
-- 📍 GPS Location
-- 🔐 Permission Flow
-- 🚫 Graceful Permission Denied Handling
-- 🖼️ Display Selected Image
-- 🌍 Display Latitude & Longitude
-
----
+- **📸 Camera & Gallery** — Ambil foto langsung dari kamera atau pilih dari galeri, lengkap dengan permission flow yang aman.
+- **📍 GPS Location** — Deteksi lokasi pengguna secara real-time menggunakan GPS perangkat.
+- **🔐 Permission Flow** — Alur permintaan izin yang jelas, termasuk penanganan saat izin ditolak dan arahan ke pengaturan perangkat.
 
 ### ✅ Level 2 Features
 
-- 📸 Camera & Gallery Selection
-- 📍 Photo + Current Location
-- 💾 AsyncStorage Persistence
-- 🗺️ Open Location in Google Maps
-- ⚙️ Open Device Settings when Permission Denied
-
----
+- **📍 Photo + Current Location** — Foto profil dan lokasi tergabung dalam satu tampilan profil.
+- **💾 AsyncStorage Persistence** — Data (foto, nama, lokasi) tetap tersimpan meski aplikasi ditutup dan dibuka kembali.
+- **🗺️ Google Maps Integration** — Buka lokasi pengguna langsung di Google Maps dengan satu ketukan.
 
 ### ⭐ Bonus Features
 
-- 🏠 Reverse Geocoding (Address)
-- 🌤️ Current Weather (Open-Meteo API)
-- 🗑️ Reset Profile Data
+- **🏠 Reverse Geocoding** — Menampilkan alamat lengkap (bukan cuma koordinat) menggunakan `expo-location`.
+- **🌤️ Live Weather** — Data cuaca real-time dari Open-Meteo API berdasarkan lokasi pengguna.
+- **🗑️ Reset Profile Data** — Hapus semua data tersimpan dengan satu tombol.
 
 ---
 
@@ -78,15 +73,18 @@ SnapJourney adalah aplikasi mobile berbasis **React Native** menggunakan **Expo 
 
 # 🛠️ Tech Stack
 
-- React Native
-- Expo SDK 54
-- JavaScript
-- Expo Image Picker
-- Expo Location
-- Expo Linking
-- Expo Linear Gradient
-- AsyncStorage
-- Open-Meteo API
+| Teknologi | Kegunaan |
+|---|---|
+| **React Native** | Framework utama untuk membangun aplikasi mobile cross-platform |
+| **Expo SDK 54** | Toolchain untuk development, build, dan release aplikasi React Native |
+| **JavaScript (ES6+)** | Bahasa pemrograman utama aplikasi |
+| **expo-image-picker** | Akses kamera dan galeri untuk pengambilan foto profil |
+| **expo-location** | Deteksi GPS dan reverse geocoding (koordinat → alamat) |
+| **expo-linking** | Membuka Google Maps dan pengaturan sistem dari dalam aplikasi |
+| **expo-linear-gradient** | Efek gradasi warna pada latar belakang UI |
+| **@react-native-async-storage/async-storage** | Penyimpanan data lokal secara persisten di perangkat |
+| **Open-Meteo API** | Sumber data cuaca real-time berbasis koordinat |
+| **EAS Build** | Layanan build cloud untuk menghasilkan APK Android release |
 
 ---
 
@@ -129,6 +127,7 @@ SnapJourney
 ├── screenshots
 ├── App.js
 ├── app.json
+├── eas.json
 ├── package.json
 └── README.md
 ```
@@ -172,13 +171,21 @@ SnapJourney
 
 # 📌 Expo Snack
 
+Coba aplikasi ini langsung di browser tanpa perlu setup apa pun:
+
 (https://snack.expo.dev/@joyyy21/snapjourney---mission-13-native-power-app)
 
 ---
 
 # 👩‍💻 Developer
 
-**Joyce Putri**
+| Info | Detail |
+|---|---|
+| **Nama** | Joyce Putri |
+| **NIM** | 243303621234 |
+| **Institusi** | Universitas Prima Indonesia |
+| **Program Studi** | Sistem Informasi |
+| **Kelas** | TI-MOBILE-01 |
 
 ---
 
@@ -200,7 +207,7 @@ Aplikasi ini telah melalui proses **build release** menggunakan **EAS Build**, m
 
 **[Download SnapJourney v1.0.0 (APK)](https://expo.dev/artifacts/eas/qr_HqsWfWYhZhzKgMS0r_9W0NTemWNob0s_j9VA5smo.apk)**
 
-> ⚠️ **Catatan:** Link artifact APK dari EAS Build memiliki masa berlaku terbatas (±13 hari sejak build dibuat, per kebijakan free tier EAS). Jika link sudah tidak dapat diakses, silakan build ulang menggunakan `eas build --platform android --profile preview` mengikuti konfigurasi `eas.json` pada repository ini.
+> ⚠️ **Catatan:** Link artifact APK dari EAS Build memiliki masa berlaku terbatas (±30 hari sejak build dibuat, per kebijakan free tier EAS). Jika link sudah tidak dapat diakses, silakan build ulang menggunakan `eas build --platform android --profile preview` mengikuti konfigurasi `eas.json` pada repository ini.
 
 ## 🛠️ Proses Build (Ringkasan)
 
@@ -241,4 +248,4 @@ Aplikasi ini telah melalui proses **build release** menggunakan **EAS Build**, m
 
 # 📄 License
 
-This project was created for **Mission 13 - Native Power App** in the Mobile Programming course.
+This project was created for **Mission 13-15 - Native Power App, Release Candidate & Demo Day Ready** in the Mobile Programming course.
